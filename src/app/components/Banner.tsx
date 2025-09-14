@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import EmblaCarousel from "./EmblaCarousel";
 import "./../css/embla.css";
 import "./../css/sandbox.css";

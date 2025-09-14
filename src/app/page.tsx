@@ -2,6 +2,7 @@
 
 import Announcement from "./components/Announcement";
 import { Banner } from "./components/Banner";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Products } from "./components/Products";
 import { Services } from "./components/Services";
@@ -21,6 +22,9 @@ export default function Home() {
         <Services />
         <Products />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

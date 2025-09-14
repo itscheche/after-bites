@@ -30,12 +30,12 @@ export const Header = () => {
           <ul className="font-sans lg:flex hidden gap-7">
             <li>
               <a href="" className="relative no-underline after-line">
-                Our Products
+                Shop
               </a>
             </li>
             <li>
               <a href="" className="relative no-underline after-line">
-                Same Day Orders
+                Our Story
               </a>
             </li>
             <li>
