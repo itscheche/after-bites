@@ -25,10 +25,13 @@ export const Products = () => {
               </span>
 
               {/* Card Image */}
-              <img
+              <Image
                 className="w-full h-full md:w-[20rem] sm:h-[19rem] object-cover aspect-square rounded-t-3xl p-3"
-                src="./images/products/brownsugarmilkteatart.jpeg"
+                src="/images/products/brownsugarmilkteatart.jpeg"
                 alt="Milk Tea Crème"
+                width={320} // pick a base width (px)
+                height={320} // pick a base height (px)
+                priority // optional: eager load above-the-fold images
               />
 
               <div className="flex flex-col">
@@ -54,27 +57,29 @@ export const Products = () => {
               {
                 name: "Lemon Cheese",
                 desc: "Lemon curd and cream cheese filling",
-                img: "./images/products/lemontart.jpeg",
+                img: "/images/products/lemontart.jpeg",
               },
               {
                 name: "Matcha Custard",
                 desc: "Matcha ganache with white chocolate flakes",
-                img: "./images/products/matchatart.jpeg",
+                img: "/images/products/matchatart.jpeg",
               },
               {
                 name: "Mango Coco",
                 desc: "Sweet mango custard, coconut cream swirl",
-                img: "./images/products/mangotart.jpeg",
+                img: "/images/products/mangotart.jpeg",
               },
             ].map((p, i) => (
               <div
                 key={i}
                 className="flex flex-col rounded-2xl shadow-lg bg-secondary group transform transition hover:scale-[1.02]"
               >
-                <img
+                <Image
                   className="w-full h-full md:w-[18rem] sm:h-[17rem] object-cover aspect-square rounded-t-3xl p-3"
                   src={p.img}
                   alt={p.name}
+                  width={288} // match ~md:w-[18rem] = 288px
+                  height={288} // square ratio
                 />
 
                 <div className="flex flex-col">
