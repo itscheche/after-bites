@@ -24,7 +24,9 @@ export const Header = () => {
           </div>
 
           {/* Logo */}
-          <h1 className="font-bakery-goods text-4xl">After Bites</h1>
+          <h1 className="font-bakery-goods text-2xl md:text-4xl">
+            After Bites
+          </h1>
 
           {/* Desktop Menu */}
           <ul className="font-sans lg:flex hidden gap-7">
