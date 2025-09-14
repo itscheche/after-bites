@@ -1,7 +1,6 @@
 "use client";
 import React, { useCallback, useEffect } from "react";
 import { EmblaOptionsType, EmblaCarouselType } from "embla-carousel";
-import { useDotButton } from "./EmblaCarouselDotButton";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
@@ -14,18 +13,6 @@ type PropType = {
 
 const EmblaCarousel: React.FC<PropType> = ({ slides, options, onSelect }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
-
-  const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
-    const autoplay = emblaApi?.plugins()?.autoplay;
-    if (!autoplay) return;
-
-    const resetOrStop =
-      autoplay.options.stopOnInteraction === false
-        ? autoplay.reset
-        : autoplay.stop;
-
-    resetOrStop();
-  }, []);
 
   // ✅ Hook into embla's `select` event
   useEffect(() => {

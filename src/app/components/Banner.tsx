@@ -3,9 +3,10 @@ import React, { useState, useCallback } from "react";
 import EmblaCarousel from "./EmblaCarousel";
 import "./../css/embla.css";
 import "./../css/sandbox.css";
-import { EmblaOptionsType } from "embla-carousel";
+import type { EmblaCarouselType } from "embla-carousel";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "./Container";
+import { EmblaOptionsType } from "embla-carousel";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 const SLIDES = [
@@ -33,7 +34,7 @@ export const Banner = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Callback to sync Embla current slide
-  const onSlideChange = useCallback((emblaApi: any) => {
+  const onSlideChange = useCallback((emblaApi: EmblaCarouselType) => {
     setSelectedIndex(emblaApi.selectedScrollSnap());
   }, []);
 

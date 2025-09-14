@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./Container";
-import { Star } from "lucide-react";
 import Image from "next/image";
 // import Rater1 from "/images/raters/rater1.png";
 // import Rater2 from "./images/raters/rater2.jpg";

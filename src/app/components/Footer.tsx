@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Container from "./Container";
+import Image from "next/image";
 
 export const Footer = () => {
   const [openSection, setOpenSection] = useState<string | null>(null);
@@ -19,11 +20,12 @@ export const Footer = () => {
           <div>
             <h2 className="text-4xl font-bakery-goods mb-4">After Bites</h2>
             <div className="flex gap-4">
-              <img src="/awards/ecovadis.png" alt="EcoVadis" className="h-10" />
-              <img
-                src="/awards/greattaste.png"
-                alt="Great Taste"
-                className="h-10"
+              <Image
+                src="/awards/awards1.png"
+                alt="EcoVadis"
+                width={80}
+                height={40}
+                className="h-10 w-auto"
               />
             </div>
           </div>
