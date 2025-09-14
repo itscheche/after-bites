@@ -1,6 +1,10 @@
 import React from "react";
 import Container from "./Container";
 import { Star } from "lucide-react";
+import Image from "next/image";
+// import Rater1 from "/images/raters/rater1.png";
+// import Rater2 from "./images/raters/rater2.jpg";
+// import Rater3 from "./images/raters/rater3.jpg";
 
 export const Products = () => {
   return (
@@ -28,33 +32,6 @@ export const Products = () => {
               />
 
               <div className="flex flex-col">
-                <div className="flex items-center justify-between my-4">
-                  {/* Rater */}
-                  <div className="relative w-1/2 h-[4rem] flex items-center justify-end border-l-4 border-tertiary rounded-tr-full rounded-br-full bg-primary">
-                    <img
-                      className="absolute right-2 z-30 w-11 h-11 rounded-full border-2 border-white shadow-md"
-                      src="https://lh3.googleusercontent.com/a/ACg8ocIexhmmTS8LcwWo1fPGY5Fl3KXpd-JuBE_Gj56P3rUR2g=s96-c"
-                      alt="Reviewer"
-                    />
-                    <img
-                      className="absolute right-8 z-20 w-11 h-11 rounded-full border-2 border-white shadow-md"
-                      src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=1080"
-                      alt="Reviewer"
-                    />
-                    <img
-                      className="absolute right-14 z-10 w-11 h-11 rounded-full border-2 border-white shadow-md"
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1080"
-                      alt="Reviewer"
-                    />
-                  </div>
-
-                  {/* Rate */}
-                  <div className="flex gap-1 items-center justify-end text-2xl pr-4">
-                    <Star className="text-yellow-500 fill-yellow-500" />
-                    <p className="font-bold">5.0</p>
-                  </div>
-                </div>
-
                 {/* Description */}
                 <h2 className="text-2xl font-semibold group-hover:text-tertiary cursor-pointer transition">
                   Milk Tea Crème
@@ -101,14 +78,6 @@ export const Products = () => {
                 />
 
                 <div className="flex flex-col">
-                  {/* Rating Row */}
-                  <div className="flex items-center justify-between my-4">
-                    <div className="flex gap-1 items-center text-xl pl-4 text-yellow-500">
-                      <Star className="fill-yellow-500" />
-                      <p className="font-bold text-gray-700">5.0</p>
-                    </div>
-                  </div>
-
                   {/* Description */}
                   <h2 className="text-2xl font-semibold group-hover:text-tertiary cursor-pointer transition">
                     {p.name}
