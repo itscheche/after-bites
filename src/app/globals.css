@@ -2,7 +2,7 @@
 
 /* ---------- CSS Variables (Base Theme) ---------- */
 :root {
-  --background: #ffffff;
+  --background: #f5f3f0;
   --foreground: #171717;
 
   --primary-background: #e6ca9a;
@@ -53,14 +53,6 @@
   --font-mono: var(--font-lateef-mono);
   --font-maison: "Maison Paris", sans-serif;
   --font-bakery-goods: "Bakery Goods", sans-serif;
-}
-
-/* ---------- Dark Mode Support ---------- */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #302f2f;
-  }
 }
 
 /* ---------- Custom Utilities ---------- */

@@ -15,7 +15,7 @@ export const Header = () => {
     return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
   return (
-    <header className="sticky z-50 top-0 bg-white shadow-sm">
+    <header className="sticky z-50 top-0 bg-background shadow-sm">
       <Container className="py-4">
         <div className="flex justify-between items-center p-2">
           {/* Hamburger for Mobile */}
