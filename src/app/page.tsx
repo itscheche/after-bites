@@ -5,7 +5,7 @@ import { Banner } from "./components/Banner";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Products } from "./components/Products";
-import { Services } from "./components/Services";
+import { Subpage } from "./components/Subpage";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       {/* Main */}
       <main>
         <Banner />
-        <Services />
+        <Subpage />
         <Products />
       </main>
 
