@@ -3,6 +3,7 @@ import { Search, ShoppingCart, User } from "lucide-react";
 import Container from "./Container";
 import { Squash as Hamburger } from "hamburger-react";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 export const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -24,9 +25,7 @@ export const Header = () => {
           </div>
 
           {/* Logo */}
-          <h1 className="font-bakery-goods text-2xl md:text-4xl">
-            After Bites
-          </h1>
+          <Image src="/logo.png" alt="After Bites" width={200} height={200} />
 
           {/* Desktop Menu */}
           <ul className="font-sans lg:flex hidden gap-7">

@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="py-20 flex flex-col gap-12">
           {/* Logo + Awards */}
           <div>
-            <h2 className="text-4xl font-bakery-goods mb-4">After Bites</h2>
+            <Image src="/logo.png" alt="After Bites" width={200} height={200} />{" "}
             <div className="flex gap-4">
               <Image
                 src="/awards/awards1.png"
